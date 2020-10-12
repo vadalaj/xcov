@@ -71,7 +71,7 @@ module Xcov
         require 'net/http/post/multipart'
 
         # Build request
-        url = URI.parse("http://opencov-test.herokuapp.com/api/v1/jobs")
+        url = URI.parse("https://opencov-test.herokuapp.com/api/v1/jobs")
         UI.message "Uploading coverage report to coveralls.io".yellow
         request = Net::HTTP::Post::Multipart.new(
           url.path,
