@@ -238,7 +238,7 @@ module Xcov
           env_name: "COVERALLS_REPO_TOKEN",
           optional: true,
           conflicting_options: [:coveralls_service_name, :coveralls_service_job_id],
-          description: "Repository token to be used by integrations not compatible with Coveralls"
+          description: "Repository token to be used by integrations not compatible with Coveralls. This version reports to cov.dev.community.com"
         ),
 
         # Fastlane compatibility issue fix
